@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clolyn Bloom Haven - Flower Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Lora:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Clolyn Bloom Haven</h2>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#bouquets" class="nav-link">Bouquet Flowers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#bridal" class="nav-link">Bridal Bouquets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#funeral" class="nav-link">Standing Funeral Sprays</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#order" class="nav-link nav-cta">Order Online</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Clolyn Bloom Haven</h1>
+            <p class="hero-subtitle">Where Beauty Blooms with Grace & Elegance</p>
+            <p class="hero-description">Soft, sophisticated floral arrangements crafted with love for life's most precious moments</p>
+            <div class="hero-buttons">
+                <a href="#bouquets" class="btn btn-primary">Shop Bouquets</a>
+                <a href="#order" class="btn btn-secondary">Order Online</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- Bouquet Flowers Section -->
+    <section id="bouquets" class="section section-bouquets">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bouquet Flowers</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Perfect for gifts, birthdays, anniversaries, and special occasions</p>
+            </div>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/Roses.jpg" alt="Classic Rose Bouquet">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Rose Bouquet</h3>
+                        <p class="product-description">Timeless elegance of fresh roses, perfect for expressing love</p>
+                        <div class="product-footer">
+                            <span class="product-price">₱2,699</span>
+                            <button class="btn-order" onclick="orderProduct('Classic Rose Bouquet', 2699)">Add to Order</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/Colorful Bouquet.jpg" alt="Colorful Mixed Bouquet">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Colorful Mixed Bouquet</h3>
+                        <p class="product-description">Vibrant blend of seasonal blooms for joyful celebrations</p>
+                        <div class="product-footer">
+                            <span class="product-price">₱2,349</span>
+                            <button class="btn-order" onclick="orderProduct('Colorful Mixed Bouquet', 2349)">Add to Order</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/Peaches&Cream.jpeg" alt="Peaches & Cream Bouquet">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Peaches & Cream Bouquet</h3>
+                        <p class="product-description">Soft peach and cream tones for a romantic, delicate touch</p>
+                        <div class="product-footer">
+                            <span class="product-price">₱2,529</span>
+                            <button class="btn-order" onclick="orderProduct('Peaches & Cream Bouquet', 2529)">Add to Order</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/Pink&White.jpg" alt="Pink & White Garden Bouquet">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pink & White Garden Bouquet</h3>
+                        <p class="product-description">Fresh garden style arrangement with soft pink and white blooms</p>
+                        <div class="product-footer">
+                            <span class="product-price">₱2,289</span>
+                            <button class="btn-order" onclick="orderProduct('Pink & White Garden Bouquet', 2289)">Add to Order</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/Sunlit Harmony.jpeg" alt="Sunlit Harmony Bouquet">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Sunlit Harmony Bouquet</h3>
+                        <p class="product-description">Bright and cheerful arrangement to spread joy and warmth</p>
+                        <div class="product-footer">
+                            <span class="product-price">₱2,469</span>
+                            <button class="btn-order" onclick="orderProduct('Sunlit Harmony Bouquet', 2469)">Add to Order</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/Megan Bouquet.jpg" alt="Megan Signature Bouquet">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Megan Signature Bouquet</h3>
+                        <p class="product-description">Our signature designer bouquet with premium seasonal flowers</p>
+                        <div class="product-footer">
+                            <span class="product-price">₱2,939</span>
+                            <button class="btn-order" onclick="orderProduct('Megan Signature Bouquet', 2939)">Add to Order</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bridal Bouquets Section -->
+    <section id="bridal" class="section section-bridal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bridal Bouquets</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Elegant wedding bouquets with customizable designs</p>
+            </div>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/White Pink Bridal Bouquet.jpg" alt="White & Pink Bridal Bouquet">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Romantic White & Pink</h3>
+                        <p class="product-description">Classic bridal bouquet with roses and delicate filler flowers</p>
+                        <div class="product-footer">
+                            <span class="product-price">₱5,289</span>
+                            <button class="btn-order" onclick="orderProduct('Romantic White & Pink Bridal Bouquet', 5289)">Add to Order</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/Spring Bridal Bouquet.jpg" alt="Spring Bridal Bouquet">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Spring Garden Bridal</h3>
+                        <p class="product-description">Fresh spring blooms for a light and airy wedding look</p>
+                        <div class="product-footer">
+                            <span class="product-price">₱5,639</span>
+                            <button class="btn-order" onclick="orderProduct('Spring Garden Bridal Bouquet', 5639)">Add to Order</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/Heather Bridal Bouquet.jpg" alt="Heather Bridal Bouquet">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Rustic Heather Elegance</h3>
+                        <p class="product-description">Bohemian style with heather and garden roses, fully customizable</p>
+                        <div class="product-footer">
+                            <span class="product-price">₱5,469</span>
+                            <button class="btn-order" onclick="orderProduct('Rustic Heather Elegance Bridal Bouquet', 5469)">Add to Order</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="customization-note">
+                <p><i class="fas fa-heart"></i> All bridal bouquets are fully customizable. Contact us to discuss your color palette, flower preferences, and wedding details.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funeral Sprays Section -->
+    <section id="funeral" class="section section-funeral">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Standing Funeral Sprays</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Respectful arrangements to honor and remember loved ones</p>
+            </div>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/White Roses.jpeg" alt="Pure White Standing Spray">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pure White Tribute Spray</h3>
+                        <p class="product-description">Elegant standing spray of white roses, symbolizing purity and peace</p>
+                        <div class="product-footer">
+                            <span class="product-price">₱7,649</span>
+                            <button class="btn-order" onclick="orderProduct('Pure White Tribute Spray', 7649)">Add to Order</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/White Burial Flower.jpg" alt="Casket Spray">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Graceful Casket Spray</h3>
+                        <p class="product-description">Traditional casket spray with white and cream blooms</p>
+                        <div class="product-footer">
+                            <span class="product-price">₱8,829</span>
+                            <button class="btn-order" onclick="orderProduct('Graceful Casket Spray', 8829)">Add to Order</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/Burial.jpg" alt="Standing Funeral Wreath">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Memorial Standing Wreath</h3>
+                        <p class="product-description">Circular standing wreath with mixed white blooms, perfect for services</p>
+                        <div class="product-footer">
+                            <span class="product-price">₱8,239</span>
+                            <button class="btn-order" onclick="orderProduct('Memorial Standing Wreath', 8239)">Add to Order</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="ribbon-note">
+                <p><i class="fas fa-ribbon"></i> All funeral arrangements include personalized ribbon messages at no extra charge. Please specify your message during ordering.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="reviews" class="section section-reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Customer Reviews</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">What our cherished customers say about us</p>
+            </div>
+            <div class="reviews-grid">
+                <article class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Absolutely stunning bouquets! The Peaches & Cream arrangement was beautiful for my anniversary. The attention to detail is exquisite."</p>
+                    <div class="review-author">
+                        <strong>Meco Benigay</strong>
+                        <span>Anniversary Customer</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Clolyn Bloom Haven made my wedding day so special. My bridal bouquet was beyond my dreams - elegant, fresh, and perfectly customized!"</p>
+                    <div class="review-author">
+                        <strong>Daniella Padua</strong>
+                        <span>Bride</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"During a difficult time, they created the most beautiful and respectful tribute for my grandmother. Their compassion and care meant so much to our family."</p>
+                    <div class="review-author">
+                        <strong>Lorence Lanzaderas</strong>
+                        <span>Memorial Service</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Same-day delivery and the flowers were incredibly fresh! The Megan Signature Bouquet was gorgeous. Highly recommend!"</p>
+                    <div class="review-author">
+                        <strong>Mechelle Intong</strong>
+                        <span>Birthday Gift</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="section section-order">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Place Your Order</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Online ordering made simple and elegant</p>
+            </div>
+            <div class="order-container">
+                <form class="order-form" id="orderForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="deliveryDate">Delivery/Pickup Date *</label>
+                            <input type="date" id="deliveryDate" name="deliveryDate" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="deliveryType">Delivery or Pickup *</label>
+                        <select id="deliveryType" name="deliveryType" required>
+                            <option value="">Select Option</option>
+                            <option value="delivery">Delivery</option>
+                            <option value="pickup">Store Pickup</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="deliveryAddress">Delivery Address (if delivery)</label>
+                        <textarea id="deliveryAddress" name="deliveryAddress" rows="3" placeholder="Enter full delivery address"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="selectedProduct">Selected Product</label>
+                        <input type="text" id="selectedProduct" name="selectedProduct" readonly placeholder="Click 'Add to Order' on a product above">
+                    </div>
+                    <div class="form-group">
+                        <label for="ribbonMessage">Ribbon Message (for funeral arrangements)</label>
+                        <input type="text" id="ribbonMessage" name="ribbonMessage" placeholder="e.g., In Loving Memory of [Name]">
+                    </div>
+                    <div class="form-group">
+                        <label for="specialInstructions">Special Instructions</label>
+                        <textarea id="specialInstructions" name="specialInstructions" rows="4" placeholder="Any specific flower preferences, color changes, or additional details..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Submit Order Request</button>
+                    <p class="form-note">* We'll contact you to confirm availability and finalize payment</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Visit Our Shop</h3>
+                            <p>Km. 11<br>Cabayugan 1<br>Sasa, Davao City</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>Phone: 09538402492<br>
+                            
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p>info@clolynbloomhaven.com<br>orders@clolynbloomhaven.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Business Hours</h3>
+                            <p>Monday - Saturday: 9:00 AM - 6:00 PM<br>Sunday: 10:00 AM - 4:00 PM<br><em>Closed on major holidays</em></p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Clolyn Bloom Haven</h3>
+                    <p>Creating beautiful memories through the art of floral design. Every arrangement tells a story of love, grace, and elegance.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#bouquets">Bouquet Flowers</a></li>
+                        <li><a href="#bridal">Bridal Bouquets</a></li>
+                        <li><a href="#funeral">Standing Funeral Sprays</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#order">Online Ordering</a></li>
+                        <li><a href="#contact">Custom Designs</a></li>
+                        <li><a href="#contact">Same-Day Delivery</a></li>
+                        <li><a href="#contact">Wedding Consultations</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Clolyn Bloom Haven. All rights reserved. | Crafted with love and blooms</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Confirmation Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <h2><i class="fas fa-check-circle"></i> Order Request Received</h2>
+            <p>Thank you for your order request! We'll contact you shortly to confirm availability and pricing.</p>
+            <p><strong>We'll reach out via phone or email within 24 hours.</strong></p>
+            <button class="btn btn-primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
